@@ -1,38 +1,3 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { useCart } from '../../contexts/CartContext';
-// import { useAuth } from '../../contexts/AuthContext';
-
-// function Header() {
-//   const { cart } = useCart();
-//   const { user, logout } = useAuth();
-
-//   return (
-//     <header className="header">
-//       <Link to="/" className="logo">E-Commerce</Link>
-
-//       <nav>
-//         <Link to="/">Home</Link>
-//         <Link to="/cart">Cart ({cart.length})</Link>
-//         {user ? (
-//           <>
-//             <span>Hello, {user.email}</span>
-//             <button onClick={logout} className="logout-btn">Logout</button>
-//           </>
-//         ) : (
-//           <>
-//             <Link to="/login">Login</Link>
-//             <Link to="/signup">Signup</Link>
-//           </>
-//         )}
-//       </nav>
-//     </header>
-//   );
-// }
-
-// export default Header;
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, Box, IconButton } from '@mui/material';
