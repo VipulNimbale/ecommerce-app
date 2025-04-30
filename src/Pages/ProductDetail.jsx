@@ -1,36 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-// import { useParams } from 'react-router-dom';
-// import { fetchProductById } from '../Services/api';
-// import { useCart } from '../contexts/CartContext';
-
-// function ProductDetail() {
-//   const { id } = useParams();
-//   const [product, setProduct] = useState(null);
-//   const { addToCart } = useCart();
-
-//   useEffect(() => {
-//     fetchProductById(id).then(data => setProduct(data));
-//   }, [id]);
-
-//   if (!product) return <div>Loading...</div>;
-
-//   return (
-//     <div className="container mx-auto p-4">
-//       <img src={product.images[0]} alt={product.title} className="w-64" />
-//       <h2 className="text-2xl">{product.title}</h2>
-//       <p>{product.description}</p>
-//       <p className="text-lg font-bold">${product.price}</p>
-//       <button onClick={() => addToCart(product)} className="bg-blue-500 text-white px-4 py-2 mt-2">
-//         Add to Cart
-//       </button>
-//     </div>
-//   );
-// }
-
-// export default ProductDetail;
-
-
-
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchProductById } from '../Services/api';
